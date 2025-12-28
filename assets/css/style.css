@@ -1,0 +1,680 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ProximaNovalight";
+  src: url("../fonts/Fontspring-DEMO-proximanova-light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/Fontspring-DEMO-proximanova-regular.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/Fontspring-DEMO-proximanova-semibold.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "ProximaNova", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --primary-color: #616161;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #616161;
+  height: 200px;
+  border-radius: 2px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.text-theme {
+  color: var(--primary-color);
+}
+
+.bg-theme {
+  background: var(--primary-color);
+}
+
+.pb-80 {
+  padding-block: 80px;
+}
+
+.main-head {
+  font-family: "ProximaNovaBold", sans-serif;
+  font-size: 36px;
+}
+
+.main-para {
+  font-size: 15px;
+  color: #616161;
+}
+
+.more-btn {
+  font-family: "ProximaNovaBold", sans-serif;
+  display: inline-block;
+  background: #000000;
+  padding: 20px;
+  width: fit-content;
+  font-weight: bold;
+  padding: 12px 40px;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.more-btn:hover {
+  padding: 12px 45px;
+}
+.line-head {
+  border-bottom: 4px solid #c4c4c4;
+  width: fit-content;
+  margin-inline: auto;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* -------------navbar---------------------- */
+
+.navbar .container {
+  flex-direction: column;
+  padding-block: 10px;
+}
+
+.navbar .navbar-collapse {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-collapse .row {
+  width: 100%;
+}
+
+.navbar-collapse img {
+  width: 18px;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-collapse img:hover {
+  margin-bottom: 5px;
+}
+
+.navbar .nav-link {
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar .nav-link.active {
+  color: #979797;
+}
+
+.navbar .nav-link:hover {
+  color: #979797;
+}
+
+.navbar .navbar-nav {
+  gap: 15px;
+  justify-content: center;
+}
+
+.navbar .navbar-brand {
+  margin-bottom: 12px;
+}
+
+.navbar-brand img {
+  width: 115px;
+}
+
+.nav-icon-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: end;
+}
+.profile-icon {
+  width: 15px !important;
+}
+
+.navbar-toggler {
+  padding: 0;
+  border: none;
+}
+
+.navbar-toggler i {
+  font-size: 28px;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+/* ------------------banner------------------------------ */
+
+.banner-section {
+  position: relative;
+  padding-block: 65px;
+}
+
+.banner-section .banner-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+}
+
+.banner-section .container {
+  position: relative;
+}
+
+.banner-section .banenr-div {
+  background: #74797f;
+  color: #fff;
+  padding: 40px;
+  width: 49%;
+}
+
+.banner-section .banenr-div h1 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.banner-section .banenr-div p {
+  font-size: 16px;
+  font-family: "ProximaNovalight", sans-serif;
+  color: #ececec;
+  width: 94%;
+  margin-bottom: 50px;
+}
+
+.banner-section .banenr-div a {
+  font-family: "ProximaNovaBold", sans-serif;
+  display: inline-block;
+  background: #fff;
+  padding: 20px;
+  width: fit-content;
+  font-weight: bold;
+  padding: 12px 40px;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+}
+
+.banner-section .banenr-div a:hover {
+  padding: 12px 45px;
+}
+
+/* -------------product-------------------- */
+
+.products-section {
+  position: relative;
+}
+.products-section .bg-vector {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.products-section .container {
+  position: relative;
+}
+
+.product-card {
+  display: flex;
+  align-items: end;
+  transition: 0.2s ease-in-out;
+  padding-inline: 15px;
+  justify-content: center;
+}
+
+.product-card:hover {
+  transform: scale(1.01);
+}
+
+.product-card.one {
+  height: 620px;
+  position: relative;
+}
+
+.product-card.two {
+  height: 298px;
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  position: absolute;
+  height: 95%;
+  object-fit: cover;
+  top: 0;
+}
+
+.product-card .head {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  border: 1px solid #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card .head h4 {
+  font-size: 22px;
+  font-family: "ProximaNovaBold", sans-serif;
+  margin-bottom: 5px;
+}
+.product-card .head p {
+  margin-bottom: 0;
+  color: #b4b4b4;
+  font-size: 14px;
+}
+
+/* ---------project---------------------- */
+
+.project-section {
+  position: relative;
+}
+.project-section .bg-vector {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.project-section .container {
+  position: relative;
+}
+
+.project-card {
+  transition: 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+}
+
+.project-card img {
+  width: 100%;
+  height: 306px;
+  object-fit: cover;
+}
+
+.project-card .head {
+  text-align: center;
+  margin-top: 15px;
+}
+.project-card .head h4 {
+  font-size: 20px;
+  font-family: "ProximaNovaBold", sans-serif;
+  margin-bottom: 0;
+}
+
+.project-card .head p {
+  margin-bottom: 0;
+  color: #b4b4b4;
+  font-size: 14px;
+}
+
+/* ------------footer------------------------ */
+
+.footer-section {
+  background: #111010;
+  color: #fff;
+}
+
+.footer-logo-div .social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-logo-div .social img {
+  width: 14px;
+  transition: 0.2s ease-in-out;
+}
+
+.footer-logo-div .social img:hover {
+  margin-bottom: 5px;
+}
+
+.footer-logo-div .social .facebook-icon {
+  width: 8px;
+}
+
+.footer-logo {
+  width: 115px;
+}
+
+.footer-add-div h6 {
+  color: #fff;
+}
+
+.footer-add-div ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-add-div li {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+/* ---------------------------------- */
+
+@media only screen and (max-width: 767px) {
+  .navbar .navbar-brand {
+    margin-bottom: 0;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+  }
+
+  .banner-section .banner-image {
+    object-position: left;
+  }
+
+  .navbar .navbar-collapse {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .container {
+    padding-inline: 20px !important;
+  }
+
+  .nav-icon-div {
+    gap: 20px;
+    justify-content: center;
+  }
+  .navbar .container {
+    flex-direction: row;
+    padding-block: 5px;
+  }
+
+  .banner-section .banenr-div {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .banner-section {
+    height: 90vh;
+    display: flex;
+    align-items: end;
+  }
+
+  .main-head {
+    font-size: 25px;
+  }
+
+  .product-card.one {
+    height: 360px;
+  }
+
+  .footer-logo-div {
+    text-align: center;
+  }
+
+  .footer-logo-div .social {
+    gap: 12px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .footer-add-div {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .pb-80 {
+    padding-block: 60px;
+  }
+
+  .product-card .head h4 {
+    font-size: 20px;
+  }
+
+  .banner-section .banenr-div p {
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .banner-section .banenr-div a {
+    padding: 9px 30px;
+    font-size: 13px;
+  }
+
+  .banner-section .banenr-div a:hover {
+    padding: 9px 35px;
+  }
+
+  .more-btn {
+    padding: 9px 30px;
+    font-size: 13px;
+  }
+
+  .more-btn:hover {
+    padding: 9px 35px;
+  }
+  .footer-logo {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .navbar .navbar-brand {
+    margin-bottom: 0;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+  }
+
+  .banner-section .banner-image {
+    object-position: left;
+  }
+
+  .navbar .navbar-collapse {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .container {
+    padding-inline: 20px !important;
+  }
+
+  .nav-icon-div {
+    gap: 20px;
+    justify-content: center;
+  }
+  .navbar .container {
+    flex-direction: row;
+    padding-block: 5px;
+  }
+
+  .banner-section .banenr-div {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .banner-section {
+    height: 90vh;
+    display: flex;
+    align-items: end;
+  }
+
+  .main-head {
+    font-size: 25px;
+  }
+
+  .product-card.one {
+    height: 360px;
+  }
+
+  .footer-logo-div {
+    text-align: center;
+  }
+
+  .footer-logo-div .social {
+    gap: 12px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .footer-add-div {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .pb-80 {
+    padding-block: 60px;
+  }
+
+  .product-card .head h4 {
+    font-size: 20px;
+  }
+
+  .banner-section .banenr-div p {
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .banner-section .banenr-div a {
+    padding: 9px 30px;
+    font-size: 13px;
+  }
+
+  .banner-section .banenr-div a:hover {
+    padding: 9px 35px;
+  }
+
+  .more-btn {
+    padding: 9px 30px;
+    font-size: 13px;
+  }
+
+  .more-btn:hover {
+    padding: 9px 35px;
+  }
+  .footer-logo {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .main-head {
+    font-family: "ProximaNovaBold", sans-serif;
+    font-size: 28px;
+  }
+  .product-card.one {
+    height: 510px;
+    position: relative;
+  }
+  .product-card.two {
+    height: 243px;
+    position: relative;
+  }
+  .product-card .head h4 {
+    font-size: 21px;
+  }
+  .project-card img {
+    height: 265px;
+  }
+  .project-card .head h4 {
+    font-size: 19px;
+  }
+  .navbar .nav-link {
+    font-size: 12px;
+  }
+
+  .navbar-collapse img {
+    width: 16px;
+  }
+  .profile-icon {
+    width: 14px !important;
+  }
+  .navbar .navbar-nav {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+  }
+  .banner-section .banenr-div a {
+    padding: 10px 40px;
+    font-size: 13px;
+  }
+  .more-btn {
+    padding: 10px 40px;
+    font-size: 13px;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .main-head {
+    font-family: "ProximaNovaBold", sans-serif;
+    font-size: 34px;
+  }
+  .product-card.one {
+    height: 510px;
+    position: relative;
+  }
+  .product-card.two {
+    height: 243px;
+    position: relative;
+  }
+  .product-card .head h4 {
+    font-size: 21px;
+  }
+  .project-card img {
+    height: 265px;
+  }
+  .project-card .head h4 {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1800px) {
+}
+
+@media (min-width: 1801px) {
+  .container {
+    max-width: 1490px;
+  }
+}
